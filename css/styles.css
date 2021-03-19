@@ -15,7 +15,18 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+
+  background: linear-gradient(
+    to right,
+    #23252f,
+    #23252f 50%,
+    #464856 50%,
+    #464856 100%
+  );
 }
 
 .container {
@@ -276,6 +287,8 @@ body {
 }
 
 .persons__title {
+  margin: 0;
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 16px;
   line-height: 28px;
@@ -350,18 +363,23 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    max-width: 1400px;
   }
 
   .event__content {
     max-width: 70%;
     flex-grow: 1;
-    padding-right: 100px 60px;
+    padding-right: 100px;
   }
 
   .event__sidebar {
     max-width: 30%;
     flex-shrink: 1;
-    padding-left: 100px 60px;
+    padding-left: 100px;
+  }
+
+  .sidebar .container {
+    margin-top: 120px;
   }
 
   .container {
@@ -371,6 +389,7 @@ body {
 
   .socials {
     margin-top: auto;
+    margin-bottom: 170px;
   }
 
   .persons__list {
